@@ -1,0 +1,16 @@
+package aop01;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class Woman implements Developer {
+
+	@Override
+	public void develop() {
+		// TODO Auto-generated method stub
+		System.out.println("자바스크리트로 개발한다.");
+	}
+	
+	
+
+}

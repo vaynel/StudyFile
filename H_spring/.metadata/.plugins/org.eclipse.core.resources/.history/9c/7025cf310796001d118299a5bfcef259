@@ -1,0 +1,22 @@
+package factory;
+
+public class ConnectorFactory {
+	
+	public static SMTPConnector createSMTPConnector(String mailName) {
+		
+		switch (mailName.toUpperCase()) {
+		case "NAVER":
+			return new NaverMail(EmailConf.NAVER_CONF);
+		case "DAUM":
+			return new NaverMail(EmailConf.DAWM_CONF);
+		case "GOOGLE":
+			return new NaverMail(EmailConf.GOOGLE_CONF);
+		default:
+			break;
+		}
+		
+		
+		return null;
+	}
+
+}

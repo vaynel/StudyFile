@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<publish-info>
+  <server id="servlet-study" path="publish0.dat"/>
+  <server id="spring-study" path="publish2.dat"/>
+  <server id="jsp-study" path="publish1.dat"/>
+</publish-info>

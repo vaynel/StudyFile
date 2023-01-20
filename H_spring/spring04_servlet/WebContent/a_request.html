@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<h1>Request</h1>
+	<h2>Get</h2>
+	<pre>
+		GET메서드는 서버로부터 정보를 조회하기 위해설계된  Http메서드이다.
+		요청파라미터는 쿼리스트링을 통해 전달한다
+		query String
+	</pre>
+	<form action="/srping04_servlet/req">
+		<label>name : <input type="text" name="name"></label><br>
+	    <label>age : <input type="number" name="age"></label><br>
+	    <button>전송</button>
+	</form>
+	
+	<h2>POST</h2>
+	<pre>
+		POST 메서드는 리소스를 생성/변경하기 위해 설계되었다.
+		요청 파라미터를 httpmessage의 body에 담아서 전달한다.
+		body에 담기는 데이터에 대한 content-type 해더를 작성해야한다.
+		form tag를 사용해 요청을 할 경우 default로 application/x-www-form-unlencoded 방식이 지정된다.
+		
+	</pre>
+	<form action="/spring04_servlet/req" method="post">
+    	<label>name : <input type="text" name="name"></label><br>
+	    <label>age : <input type="number" name="age"></label><br>
+	    <button>전송</button>
+	</form>
+	
+	<h2>POST,enctype="multipart/form-data"</h2>
+	<form action="/spring04_servlet/req" method="post" enctype="multipart/form-data">
+		<label>name : <input type="text" name="name"></label><br>
+	    <label>file : <input type="file" name="file"></label><br>
+	    <button>전송</button>
+	
+	</form>
+
+
+</body>
+</html>

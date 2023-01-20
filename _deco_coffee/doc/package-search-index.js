@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","url":"allpackages-index.html"},{"l":"com.mc.coffeemanager"},{"l":"com.mc.coffeemanager.presentation"},{"l":"com.mc.coffeemanager.service"},{"l":"com.mc.coffeemanager.service.code"}]

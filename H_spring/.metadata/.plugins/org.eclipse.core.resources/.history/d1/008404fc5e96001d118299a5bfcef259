@@ -1,0 +1,5 @@
+package templateMethod.framwork.exception;
+
+public class HandleableException {
+
+}

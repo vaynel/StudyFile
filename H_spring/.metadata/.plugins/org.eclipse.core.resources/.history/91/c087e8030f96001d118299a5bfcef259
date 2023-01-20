@@ -1,0 +1,12 @@
+package componentscan;
+
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+
+public class Looger {
+	
+	public void warn(String msg) {
+		System.out.println("[system:warm]" +LocalDateTime.now() +":" + msg);
+	}
+
+}

@@ -1,0 +1,14 @@
+package componentscan;
+
+import org.springframework.stereotype.Component;
+
+@Component(value = "ex")
+public class ExceptionHandler {
+	
+	
+	public void handle(Exception e) {
+		System.out.println(e.getMessage()+"를 개발자에게 전송");
+	}
+	
+	
+}

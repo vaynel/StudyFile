@@ -1,0 +1,22 @@
+package factory;
+
+public enum EmailConf {
+	
+	NAVER_CONF("smtp.naver.com","mc","1234abc",5000)
+	
+	public String URL;
+	public String ID;
+	public String PASSWORD;
+	public int TIMEOUT_MS;
+	
+	
+	private EmailConf(String uRL, String iD, String pASSWORD, int tIMEOUT_MS) {
+		URL = uRL;
+		ID = iD;
+		PASSWORD = pASSWORD;
+		TIMEOUT_MS = tIMEOUT_MS;
+	}
+	
+	
+	
+}

@@ -1,0 +1,18 @@
+package proxy;
+
+public class Woman implements Developer{
+	
+	public void develop() {
+			
+			System.out.println("출근 카드를 찍는다.");
+			
+			try {
+				System.out.println("자바스크립트로 개발을 한다.");
+			} catch (Exception e) {
+				System.out.println("쉬는 날이 었다.");
+				
+			}finally {
+				System.out.println("집에 간다.");
+			}
+	}
+}

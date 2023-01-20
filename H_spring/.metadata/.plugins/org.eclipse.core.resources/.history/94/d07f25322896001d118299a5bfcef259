@@ -1,0 +1,19 @@
+package proxy;
+
+public class DeveloperProxy implements Developer {
+	
+	private Developer developer;
+
+	public DeveloperProxy(Developer developer) {
+		super();
+		this.developer = developer;
+	}
+
+	@Override
+	public void develop() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	
+}

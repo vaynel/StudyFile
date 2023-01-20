@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="dateBean" class ="java.util.Date"></bean>
+	<bean id = "codeBean" class = "bean.cheatsheet.Code"></bean>
+	
+	<bean id = "bean" class = "bean.cheatsheet.Bean">
+		<constructor-arg name="date" ref="dateBean"></constructor-arg>
+		<property name="code" ref="codeBean"></property>
+		<property name="number" value = "999"></property>
+		<property name="array">
+			<array>
+				<value>홍길동</value>
+				<value>길동</value>
+				<value>동</value>
+			</array>
+		
+		</property>
+		<property name="list">
+			<list>
+				<value>봄</value>
+				<value>여름</value>
+				<value>"가을</value>
+				<value>겨울</value>
+			</list>
+		</property>
+		<property name="set">
+			<set>
+				<value>1</value>
+				<value>2</value>
+				<value>3</value>
+				<value>1</value>
+			</set>
+		</property>
+		<property name="map">
+			<map>
+				<entry>
+					<key><value>봄</value></key>
+					<value>Spring</value>
+				</entry>
+				
+				<entry key="여름" value = "summer"></entry>
+			</map>
+		
+		</property>
+		<property name="properties">
+			<props>
+				<prop key="하늘">sky</prop>
+				<prop key="구름">cloud</prop>
+				<prop key="아우">sky</prop>
+			</props>
+		</property>
+		
+	</bean>
+	
+	
+	
+</beans>

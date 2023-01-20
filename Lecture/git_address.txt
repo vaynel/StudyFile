@@ -1,0 +1,8 @@
+B_SQL
+https://github.com/lectureazi/DB-Study.git
+C_jdbc
+https://github.com/lectureazi/JDBC-Study.git
+
+
+table만드는 사이트
+https://www.erdcloud.com/d/45vRihDpKEo9fYcMa

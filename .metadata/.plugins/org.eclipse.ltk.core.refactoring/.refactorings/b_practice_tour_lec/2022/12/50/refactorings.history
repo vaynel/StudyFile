@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy package &apos;com.mc.I_interface&apos; to &apos;b_oop/src/com.mc&apos;&#x0D;&#x0A;- Original project: &apos;b_practice_tour_lec&apos;&#x0D;&#x0A;- Destination element: &apos;b_oop/src/com.mc&apos;&#x0D;&#x0A;- Original element: &apos;b_practice_tour_lec/src/com.mc.I_interface&apos;" description="Copy package" destination="=b_oop/src&lt;com.mc" element1="/src&lt;com.mc.I_interface" flags="589830" fragments="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1670373248349" version="1.0"/>
+</session>

@@ -1,0 +1,10 @@
+package templateMethod.framework;
+
+public class ProxyRepository {
+	public Map<String,Object> selectOne(String sql,Map<String,Object> resultSet){
+		
+		
+		return resultSet;
+	}
+}
+

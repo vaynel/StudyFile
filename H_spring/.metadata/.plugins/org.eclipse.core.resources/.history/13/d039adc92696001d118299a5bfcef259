@@ -1,0 +1,18 @@
+package proxy;
+
+public class Child {
+	
+	public void develop() {
+		
+		System.out.println("출근 카드를 찍는다.");
+		
+		try {
+			System.out.println("스크래치로 개발을 한다.");
+		} catch (Exception e) {
+			// TODO: handle exception
+		}finally {
+			
+		}
+	}
+
+}

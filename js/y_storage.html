@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        .note{
+            border: 1px solid;
+            min-height:200px;
+        }
+        
+    </style>
+    <script defer src="./resources/js/common.js" type="text/javascript"></script>
+</head>
+<body>
+    <h1>localStorage, SessionStorage</h1>
+    <pre>
+        브라우저에 있는 문자형 데이터 저장공간
+        key-value 형태로 데이터를 저장
+
+        localStorage : 데이터를 영속적으로 저장
+        SessionStorage : 데이터를 브라우저의 세션동안 저장
+    </pre>
+    <div id="storageNote" class="note"></div>
+    <br>
+    <br>
+
+    <input type="text" placeholder="이름" id="username"><br>
+    <input type="number" placeholder="나이" id="userAge"><br>
+    <label>성인인증<input type="checkbox" id="checkAdult"></label>
+    <br><br>
+
+    <button id="btnSave">데이터 저장</button>
+    <button id="btnGet">데이터 확인</button>
+    <button id="btnDel">데이터 삭제</button>
+
+    <script>
+
+    btnSave.addEventListener('click', ev=>{
+        let userInfo = {
+            name:username.value,
+            age:userAge.valueAsNumber,
+            isAdult:checkAdult.checked
+        }
+    })
+
+    btnGet.addEventListener('click',ev=>{
+        let dataAsSJson = localStorage.getItem('userInfo');        
+        let obj = JSON.parse(dataAsSJson);
+
+
+    })
+
+
+    localStorage.setItem('userInfo', JSON.stringify(userInfo));
+        sessionStorage.setItem('userInfo', JSON.stringify(userInfo));
+
+    // localStorage.setItem('age',15);
+    // sessionStorage.setItem('isAdult', false);
+    // localStorage.setItem('age',20);
+
+    // console.dir(localStorage.getItem('age'));
+    // console.dir(sessionStorage.getItem('isAdult'));
+
+    // // storage 객체는 값을 문자열로 저장한다.
+    // console.dir(typeof(localStorage.getItem('age')));
+    // console.dir(typeof(sessionStorage.getItem('isAdult')));
+
+    //localStorage.clear();
+    //sessionStorage.removeItem('isAdult');
+    </script>
+
+    <h1>Cookie</h1>
+    <pre>
+
+    </pre>
+    <div id="cookieNote" class="note"></div>
+    <script>
+        document.cookie='js-cookie=자바스크립트에서 추가한 쿠기.;max-age=20';
+        
+
+
+    </script>
+
+
+
+    
+</body>
+</html>

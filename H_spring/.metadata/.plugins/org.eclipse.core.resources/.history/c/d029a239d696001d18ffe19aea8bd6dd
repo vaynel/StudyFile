@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<h1>Request</h1>
+	<h2>Get</h2>
+	<pre>
+		GET메서드는 서버로부터 정보를 조회하기 위해설계된  Http메서드이다.
+		요청파라미터는 쿼리스트링을 통해 전달한다
+		query String
+	</pre>
+	<form action="/srping04_servlet/req">
+		<label>name : <input type="text" name="name"></label><br>
+	    <label>age : <input type="number" name="age"></label><br>
+	    <button>전송</button>
+	
+	
+	</form>
+
+
+
+</body>
+</html>
