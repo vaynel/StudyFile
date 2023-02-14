@@ -1,7 +1,0 @@
-package proxy;
-
-public interface Developer {
-	
-	
-
-}

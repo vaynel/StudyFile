@@ -1,2 +1,3 @@
 eclipse.preferences.version=1
-newFileTemplateName=New JSP File (html 5)
+newFileTemplateName=spring-study
+org.eclipse.wst.sse.ui.custom_templates=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><templates><template autoinsert\="true" context\="jsp_new" deleted\="false" description\="JSP with html 5 markup" enabled\="true" name\="spring-study">&lt;%@ page language\="java" contentType\="text/html; charset\=${encoding}"\r\n    pageEncoding\="${encoding}"%&gt;\r\n&lt;%@ include file\="/WEB-INF/views/include/head.jsp" %&gt;\r\n\r\n&lt;body&gt;\r\n&lt;%@ include file\="/WEB-INF/views/include/header.jsp" %&gt;\r\n\r\n${cursor}\r\n\r\n&lt;%@ include file\="/WEB-INF/views/include/footer.jsp" %&gt;\r\n&lt;/body&gt;\r\n&lt;/html&gt;</template></templates>

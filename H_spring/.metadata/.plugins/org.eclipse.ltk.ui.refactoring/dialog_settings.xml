@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="RefactoringWizard.preview">
-		<item key="width" value="580"/>
-		<item key="height" value="380"/>
+		<item key="width" value="570"/>
+		<item key="height" value="370"/>
 	</section>
 	<section name="RefactoringStatusDialog">
 		<item key="DIALOG_WIDTH" value="816"/>
@@ -10,5 +10,9 @@
 		<item key="DIALOG_FONT_NAME" value="1|맑은 고딕|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|맑은 고딕"/>
 	</section>
 	<section name="org.eclipse.ltk.ui.refactoring.settings">
+		<item key="deleteSubPackages" value="true"/>
+	</section>
+	<section name="RefactoringPropertyPage">
+		<item key="org.eclipse.ltk.ui.refactoring.sortRefactorings" value="true"/>
 	</section>
 </section>

@@ -1,0 +1,8 @@
+ CREATE TABLE member
+   (	`user_id` VARCHAR(36) NOT NULL primary key COMMENT '회원 아이디', 
+	`password` VARCHAR(70) NOT NULL COMMENT '회원 비밀번호', 
+	`email` VARCHAR(50) NOT NULL COMMENT '회원 이메일', 
+	`grade` CHAR(50)  NULL default 'ROLE_USER' COMMENT '회원 등급', 
+    `tell` VARCHAR(15)  NULL COMMENT '회원 전화번호', 
+    `is_leave` CHAR(1) NOT NULL default 'N' COMMENT '탈퇴여부'
+   );

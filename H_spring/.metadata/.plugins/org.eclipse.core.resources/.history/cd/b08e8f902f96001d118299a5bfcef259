@@ -1,8 +1,0 @@
-package aop01;
-
-import org.springframework.stereotype.Component;
-
-@Component
-public class Child implements Developer{
-
-}

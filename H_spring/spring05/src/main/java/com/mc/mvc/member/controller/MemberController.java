@@ -9,7 +9,6 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import com.mc.mvc.member.dto.Member;
 
-
 //@Controller
 //1. 해당 클래스의 인스턴스를 ApplicationContext에 빈으로 등록
 //2. Controller 역활을 수행하기 위한 Annotation을 사용할 수 있게 해준다.
@@ -26,35 +25,34 @@ import com.mc.mvc.member.dto.Member;
 //						
 //		@ModelAttridute : 컨트롤러의 매개변수에 DTO를 선언할 경우 set + 요청파라미터명으로 요청파라미터를 객체에 바인드
 
-
 @Controller
 @RequestMapping("member")
 public class MemberController {
-	
+
 	@GetMapping("/signup")
-	public void signup() {};
-	
+	public void signup() {
+	};
+
 	@PostMapping("/mailauth")
-	public String signup(Member member,Model model) {
-		
-		Member dummy=new Member();
+	public String signup(Member member, Model model) {
+
+		// redirect 하는 방법 : view Name을 반환할 때 앞에 redirect: 를 붙여준다.
+		Member dummy = new Member();
 		dummy.setUserId("dummy");
-		dummy.setPassword("123123");
-		dummy.setEmail("123@123.com");
-		
-		// model에 atttibute이름을 지저하지 않으면 타입명을 따라간다 . Member dummy => member
-		
-		model.addAttribute(dummy);
-		System.out.println(dummy);
-//		System.out.println(member);
-		return "member/mypage"; 
+		dummy.setPassword("123124");
+		dummy.setEmail("aaa@aaa.com");
+
+		// model에 attribute이름을 지정하지 않으면 타입명을 따라간다. Member dummy => member
+		// model.addAttribute(dummy);
+		model.addAttribute("dum", dummy);
+		System.out.println(model);
+
+		return "member/mypage";
 		// redirect 하는 방법 : view Name을 반환 할때 앞에 redirect:를 붙여준다.
 		// return redirect:index;
 	}
-	
+
 	@GetMapping("/mypage")
 	public void mypage(Model model) {
-		
-		
 	};
 }

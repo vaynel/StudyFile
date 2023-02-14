@@ -1,5 +1,0 @@
-package strategy.framework.common;
-
-public interface ConnectionCreator {
-
-}

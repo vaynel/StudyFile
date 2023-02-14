@@ -130,6 +130,8 @@ exit /B %RETVAL%
 :mainEntry
 del /Q "%TEMP%\%~nx0.run" >NUL 2>&1
 
+
+
 rem Guess CATALINA_HOME if not defined
 set "CURRENT_DIR=%cd%"
 if not "%CATALINA_HOME%" == "" goto gotHome

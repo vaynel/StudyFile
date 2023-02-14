@@ -1,5 +1,0 @@
-package templateMethod.framwork.exception;
-
-public class DataAccessException {
-
-}

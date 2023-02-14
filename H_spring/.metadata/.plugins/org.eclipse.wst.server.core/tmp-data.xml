@@ -2,5 +2,6 @@
 <temp-directories>
   <temp-directory age="0" key="servlet-study" path="tmp0" recycle="false"/>
   <temp-directory age="0" key="spring-study" path="tmp2" recycle="false"/>
+  <temp-directory age="0" key="study_alone" path="tmp3" recycle="false"/>
   <temp-directory age="0" key="jsp-study" path="tmp1" recycle="false"/>
 </temp-directories>

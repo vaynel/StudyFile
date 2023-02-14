@@ -1,5 +1,0 @@
-package templateMethod.framwork.code;
-
-public enum ErrorCode {
-
-}
